@@ -41,7 +41,7 @@ p {
 /* MAIN */
 
 main {
-    padding-inline: 15%;
+    margin-inline: 15%;
 }
 
 .imagen {
@@ -51,12 +51,18 @@ main {
 .fila {
     display: flex;
     flex-wrap: wrap;
-    padding: 1%;
+    max-width: 1200px;
+    margin: 1%;
 }
 
 .columna {
-    flex: auto;
-    padding: 1%;
+    max-width: 600px;
+    margin: 1%;
+}
+
+.centrado {
+    justify-content: center;
+    text-align: center;
 }
 
 .galeria-imagen {
@@ -67,7 +73,7 @@ main {
 /* FOOTER */
 
 footer {
-    text-align: center;
+    margin-inline: 15%;
 }
 
 
@@ -76,15 +82,20 @@ footer {
 @media screen and (max-width: 1024px) {
 
     main {
-        padding-inline: 5%;
-    }
-
-    .columna {
-        text-align: center;
+        margin-inline: 5%;
     }
 
     .imagen {
-        max-width: 400px;
+        max-width: 300px;
+    }
+
+    .fila {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .columna {
+        max-width: 300px;
     }
 
     .galeria-imagen {
@@ -96,16 +107,20 @@ footer {
 @media screen and (max-width: 480px) {
 
     main {
-        padding-inline: 0;
-    }
-
-    .columna {
-        flex-basis: 100%;
-        text-align: center;
+        margin-inline: 0%;
     }
 
     .imagen {
         max-width: 250px;
+    }
+
+    .fila {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .columna {
+        max-width: 2500px;
     }
 
     .galeria-imagen {
