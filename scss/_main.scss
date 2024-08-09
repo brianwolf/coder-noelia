@@ -1,0 +1,73 @@
+/* PRINCIPAL */
+
+body {
+    background-color: $color-fondo;
+}
+
+p {
+    font-family: "Edu AU VIC WA NT Hand";
+    color: white;
+    font-size: 120%;
+}
+
+h1 {
+    @extend p;
+    font-size: 200%;
+}
+
+h2 {
+    @extend p;
+    font-size: 150%;
+}
+
+
+/* HEADER */
+
+.logo {
+    width: 40px;
+    margin-right: 20px;
+}
+
+.nav-link.active {
+    font-weight: bold;
+}
+
+
+
+/* MAIN */
+
+main {
+    margin-inline: $margen-pc;
+}
+
+.imagen {
+    max-width: $tamano-imagen-pc;
+}
+
+.fila {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 1%;
+}
+
+.columna {
+    max-width: 600px;
+    margin: 1%;
+}
+
+.centrado {
+    justify-content: center;
+    text-align: center;
+}
+
+.galeria-imagen {
+    max-width: 200px;
+}
+
+
+/* FOOTER */
+
+footer {
+    margin-inline: 15%;
+}
