@@ -1,0 +1,23 @@
+@media screen and (max-width: 1024px) {
+
+    main {
+        margin-inline: $margen-tablet;
+    }
+
+    .imagen {
+        max-width: $tamano-imagen-tablet;
+    }
+
+    .fila {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .columna {
+        max-width: 300px;
+    }
+
+    .galeria-imagen {
+        max-width: 300px;
+    }
+}
