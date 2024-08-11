@@ -65,9 +65,14 @@ main {
     max-width: 200px;
 }
 
+.galeria-imagen:hover {
+    transition: 0.5s;
+    transform: scale(1.4);
+}
+
 
 /* FOOTER */
 
 footer {
-    margin-inline: 15%;
+    margin-inline: $margen-pc;
 }
